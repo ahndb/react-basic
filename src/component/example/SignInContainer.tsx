@@ -5,6 +5,8 @@
 import React from 'react'
 import {IdInputBox} from './InputBox'
 import {PasswordInputBox} from './InputBox'
+import './style.css';
+import './common.css';
 
 export default function SignInContainer() {
   return (
