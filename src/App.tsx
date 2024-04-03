@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
+import SignInContainer from './component/example/SignInContainer';
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
 // JSX / TSX :
@@ -72,8 +73,9 @@ function App() {
     <>
       {/* <ClassComponent />
       <FunctionComponent /> */}
-      <Component />
-      <Sample />
+      {/* <Component />
+      <Sample /> */}
+      <SignInContainer />
     </>
   );
 }
