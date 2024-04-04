@@ -19,3 +19,40 @@ export default function CurlyBraces() {
     </div>
   )
 }
+
+
+const baseUrl = 'https://i.imgur.com/';
+const person = {
+  name: 'Gregorio Y. Zara',
+  imageId: '7vQD0fP',
+  imageSize: 's',
+  theme: {
+    backgroundColor: 'black',
+    color: 'pink'
+  }
+};
+
+const listitem = [
+  'Improve the videophone',
+  'Prepare aeronautics lectures',
+  'Work on the alcohol-fuelled engine'
+]
+
+export function TodoList() {
+  return (
+    <div style={person.theme}>
+      <h1>{person.name}'s Todos</h1>
+      <img
+        className="avatar"
+        // src={baseUrl + person.imageId + person.imageSize + '.jpg'}
+        src={`${baseUrl}${person.imageId}${person.imageSize}.jpg`}
+        alt={person.name}
+      />
+      <ul>
+        <li>listitem[0]</li>
+        <li>listitem[1]</li>
+        <li>listitem[2]</li>
+      </ul>
+    </div>
+  );
+}

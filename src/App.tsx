@@ -4,6 +4,7 @@ import Component from './component/Component';
 import Sample from './component/Sample';
 import SignInContainer from './component/example/SignInContainer';
 import CurlyBraces from './component/CurlyBraces';
+import Properties from './component_manage/Properties';
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
 //! JSX / TSX :
@@ -75,9 +76,10 @@ function App() {
     {/* <ClassComponent />
       <FunctionComponent />
       <Component />
-      <Sample />
-      <SignInContainer /> */}
       <CurlyBraces />
+      <Sample />*/}
+      <SignInContainer /> 
+      <Properties />
     </>
   );
 }
