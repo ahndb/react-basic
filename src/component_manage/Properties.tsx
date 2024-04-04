@@ -9,19 +9,23 @@ import React from 'react'
 interface Props {
   title: string;
   content: string;
+  nickname?: string;
 }
 
-function Child(props: Props) {
 
-  // props = {
-  //   title: '제목1',
-  //   content: '내용1'
-  // }
+
+function Child({title, content, nickname = '내용 무'}: Props) {
+
+  // const title = props.title;
+  // const content = props.content;
+
+  // const {title, content} = props;
 
   return(
     <div>
-      <h1>{props.title}</h1>
-      <p>{props.content}</p>
+      <h1>{title}</h1>
+      <p>{content}</p>
+      <h2>{nickname}</h2>
     </div>
   )
 
@@ -30,7 +34,7 @@ function Child(props: Props) {
 export default function Properties() {
   return (
     <>
-      <Child title='제목1' content='내용1' />
+      <Child title='제목1' content='내용1' nickname='로제' />
       <Child title='제목2' content='내용2' />
       <Child title='제목3' content='내용3' />
       

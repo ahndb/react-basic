@@ -77,9 +77,9 @@ function App() {
       <FunctionComponent />
       <Component />
       <CurlyBraces />
-      <Sample />*/}
-      <SignInContainer /> 
       <Properties />
+    <Sample />*/}
+    <SignInContainer /> 
     </>
   );
 }

@@ -35,8 +35,27 @@ export function PasswordInputBox() {
           <div className="input-content-box">
               <input className="input" type={type} placeholder={placeholder} />
           </div>
-        <div className="input-message"></div>
+        <div className="input-message "></div>
       </div>
     </>
+  );
+}
+
+interface Props {
+  label: string;
+  type: 'text' | 'password'; // 타입에 올수 있는 것을 지정해서 안정성을 높인다
+  placeholder: string;
+}
+
+export default function InputBox({label, type, placeholder}: Props) {
+
+  return (
+    <div className="input-box">
+      <div className="input-label label">{label}</div>
+        <div className="input-content-box">
+          <input className="input" type={type} placeholder={placeholder} />
+        </div>
+      <div className="input-message "></div>
+    </div>
   );
 }
