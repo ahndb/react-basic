@@ -3,13 +3,14 @@ import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
 import SignInContainer from './component/example/SignInContainer';
+import CurlyBraces from './component/CurlyBraces';
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
-// JSX / TSX :
+//! JSX / TSX :
 // JSX (JavaScript XML) / TSX (TypeScript XML)
 // XML의 형태와 유사, DOM 트리를 생성하는 JS, TS의 확장
 
-// Component : 
+//! Component : 
 // UI를 독립적인 부분으로 나누어서 재사용을 가능하도록 함
 // 각각의 요소별로 개별 상태와 로직을 가지고 있음
 // 사용할 때는 HTML의 요소와 비슷하게 사용됨
@@ -71,11 +72,12 @@ function FunctionComponent () {
 function App() {
   return (
     <>
-      {/* <ClassComponent />
-      <FunctionComponent /> */}
-      {/* <Component />
-      <Sample /> */}
-      <SignInContainer />
+    {/* <ClassComponent />
+      <FunctionComponent />
+      <Component />
+      <Sample />
+      <SignInContainer /> */}
+      <CurlyBraces />
     </>
   );
 }
