@@ -5,11 +5,11 @@
   min-height: 1024px;
 }
 
-.sign-up-image-box {
+/* .sign-up-image-box {
   min-width: 830px;
   background-image: url(../../resource/image/sing-up-background-image.png);
   background-size: cover;
-}
+} */
 
 .sign-up-box {
   display: flex;

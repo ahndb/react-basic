@@ -6,6 +6,7 @@ import SignInContainer from './component/example/SignInContainer';
 import CurlyBraces from './component/CurlyBraces';
 import Properties from './component_manage/Properties';
 import SignUpContainer from './component_manage/example/SignUpContainer';
+import ConditionalRendering from './component_manage/ConditionalRendering';
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
 //! JSX / TSX :
@@ -79,9 +80,10 @@ function App() {
       <Component />
       <CurlyBraces />
       <Properties />
+      <SignUpContainer />
     <SignInContainer /> 
     <Sample />*/}
-    <SignUpContainer />
+    <ConditionalRendering />
     </>
   );
 }
