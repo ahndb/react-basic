@@ -26,7 +26,7 @@ function IfComponent ({ number }: { number: number}) {
 
 function AndComponent({number} : {number: number}) {
   // && 연산자를 이용한 조건부 렌더링
-  // - JSX 내부(return 안)에서 상황(조건)에 따라 렌더링 여부를 결정하고 싶을 때 사용
+  // - JSX 내부(return 안)에서 상황(조건)에 따라 렌더링 여부를 결정하고 싶을 때 사용 // 참, 거짓으로 나오는 결과에 사용하면 좋음
 
   // ex) 만약 number가 양수면 '양수'를 렌더링
   // if (number > 0) return '양수';
