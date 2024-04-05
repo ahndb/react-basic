@@ -83,9 +83,9 @@ function App() {
       <Properties />
       <SignUpContainer />
     <ConditionalRendering />
-    <SignInContainer /> 
-    <Sample />*/}
     <ListRendering />
+  <Sample />*/}
+  <SignInContainer /> 
     </>
   );
 }

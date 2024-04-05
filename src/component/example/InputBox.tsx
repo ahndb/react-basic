@@ -41,14 +41,14 @@ export function PasswordInputBox() {
   );
 }
 
-interface Props {
+export interface InputBoxProps {
   label: string;
   type: 'text' | 'password'; // 타입에 올수 있는 것을 지정해서 안정성을 높인다
   placeholder: string;
   button?: string;
 }
 
-export default function InputBox({label, type, placeholder, button}: Props) {
+export default function InputBox({label, type, placeholder, button}: InputBoxProps) {
 
   return (
     <div className="input-box">
