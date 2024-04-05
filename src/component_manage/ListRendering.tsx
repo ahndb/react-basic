@@ -2,8 +2,8 @@ import React from 'react'
 
 // 리스트 렌더링 :
 // - JSX 내부에서 반복적으로 렌더링하는 요소에 대해 반복 처리
-// - JSX 안에서는 for 혹은 while과 같은 반복문을 사용할 수 없음
-// - 리스트의 각종 메서드를 활용해야함
+//* - JSX 안에서는 for 혹은 while과 같은 반복문을 사용할 수 없음
+//* - 리스트의 각종 메서드를 활용해야함
 
 interface Human{
   name: string;
