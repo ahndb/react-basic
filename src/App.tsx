@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
-import SignInContainer from './component/example/SignInContainer';
+import SignInContainer from './component/example/SignUpContainer';
 import CurlyBraces from './component/CurlyBraces';
 import Properties from './component_manage/Properties';
 import SignUpContainer from './component_manage/example/SignUpContainer';
 import ConditionalRendering from './component_manage/ConditionalRendering';
 import ListRendering from './component_manage/ListRendering';
+import Event from './interaction/EventComponent';
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
 //! JSX / TSX :
@@ -84,8 +85,9 @@ function App() {
       <SignUpContainer />
     <ConditionalRendering />
     <ListRendering />
+  <SignInContainer />
   <Sample />*/}
-  <SignInContainer /> 
+  <Event />
     </>
   );
 }
