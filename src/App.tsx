@@ -10,6 +10,8 @@ import ConditionalRendering from './component_manage/ConditionalRendering';
 import ListRendering from './component_manage/ListRendering';
 import Event from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
+import ForwordingStateComponent from './interaction/ForwordingStateComponent';
+
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
 //! JSX / TSX :
@@ -88,8 +90,9 @@ function App() {
     <ListRendering />
   <SignInContainer />
   <Event />
-  <Sample />*/}
   <StateComponent />
+  <Sample />*/}
+  <ForwordingStateComponent />
     </>
   );
 }

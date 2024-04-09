@@ -5,11 +5,12 @@ import React, { ChangeEvent, useState } from 'react'
 // - 컴포넌트의 렌더링 결과에 영향을 미침
 // - 컴포넌트는 독립적인 상태를 가질 수 있음
 // - 상태가 변경되면 컴포넌트가 리렌더링 됨
+//* - 일반변수는 렌더링의 기준이 되지 않음.
 
 export default function StateComponent() {
 
   // status 선언 :
-  //! - useState 함수로 함수를 선언할 수 있음
+  //! - useState 함수로 함수를 선언할 수 있음(use가 붙은 함수를 훅(hook) 함수라고 함)
   //! - 선언방법 : const[상태변수, 상태변경함수] = useState<상태변수타입>(상태변수초기값);
 
   // let count = 0;
