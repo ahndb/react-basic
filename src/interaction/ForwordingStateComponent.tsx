@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 
 // 컴포넌트로 상태 전달:
 // - 부모요소에서 자식요소로 상태를  전달하려면 Properties로 전달
+//! - 문제점 :
+// - 자식 컴포넌트에서 상태를 변경하면 부모 컴포넌트가 리렌더링됨
+// - 해당 상태를 쓰지 않는 부모 컴포넌트의 자식 컴포넌트도 같이 렌더링이 됨
+// - 상태 선언을 최대한 낮은 부모 컴포넌트에서 선언하여 전달
+//? - 이 문제를 해결하기 위해 글로벌 상태(context, Redux, zustand)라고하는 상태관리가 파생됨
 
 interface Sub1Props{
   count: number;
@@ -26,7 +31,7 @@ function SubComponent2 ( props: Sub1Props) {
 
   return (
     <div style={{padding: '8px', backgroundColor: 'blue'}}>
-      <h2 onClick={onClickHandler}>{numbers.length}</h2>
+      <h2 style={{backgroundColor: 'green'}} onClick={onClickHandler}>{numbers.length}</h2>
       <SubComponent1 {...props} />
     </div>
   );
