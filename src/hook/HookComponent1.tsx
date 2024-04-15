@@ -15,13 +15,16 @@ import React, { useEffect, useState } from 'react'
 //* - useCallback : 메모리 내에서 함수를 재사용할 수 있도록 하는 함수, 렌더링 없이 특정 함수를 다시 호출할 수 있도록 해줌
 //* - useMemo : 메모리에 계산된 값(함수의 결과)을 저장하여 함수 재실행 없이 사용할 수 있도록 하는 함수
 
-
+//* - 훅 함수는 반드시 컴포넌트의 코드블럭에 존재해야 함
+//* - 만약 컴포넌트의 코드 블럭 외에 존재하고 싶다면 그 코드 블럭은 반드시 훅 함수 이어야 함
+// const [count, setCount] = useState<number>(0); 컴포넌트 외부 선언 안됨
 export default function HookComponent1() {
 
   const [count, setCount] = useState<number>(0);
   const [flag, setFlag] = useState<boolean>(false);
 
   const addCount = () => {
+    // const [count, setCount] = useState<number>(0); 내부 선언 안됨
     setCount(count+1);
   }; 
   
@@ -56,6 +59,7 @@ export default function HookComponent1() {
     // console.log(count);
   },[count]);
 
+  //? 스코프할 상태 배열에 두개 이상의 상태를 지정할 수 있음 (배열에 포함된 상태 중 하나라도 변경되면 effect가 실행됨)
   useEffect (()=> {
     // console.log('count 또는 flag가 변경됨');
     // console.log(count);
@@ -63,6 +67,9 @@ export default function HookComponent1() {
   },[count, flag]);
 
   const SubComponent = () => {
+
+    // 전달한 콜백 함수의 return으로 컴포넌트가 unmount시 실행할 함수를 반환 할 수있음
+    // 상태 스코프와 연결하여 작업할 필요가 없음
     useEffect (()=> {
       // console.log('mount시 실행');
       // return () => {
