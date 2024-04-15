@@ -11,6 +11,7 @@ import ListRendering from './component_manage/ListRendering';
 import Event from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
 import ForwordingStateComponent from './interaction/ForwordingStateComponent';
+import HookComponent1 from './hook/HookComponent1';
 
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
@@ -91,8 +92,9 @@ function App() {
   <SignInContainer />
   <Event />
   <StateComponent />
-  <Sample />*/}
   <ForwordingStateComponent />
+  <Sample />*/}
+  <HookComponent1 />
     </>
   );
 }
