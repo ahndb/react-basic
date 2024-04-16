@@ -13,6 +13,7 @@ import StateComponent from './interaction/StateComponent';
 import ForwordingStateComponent from './interaction/ForwordingStateComponent';
 import HookComponent1 from './hook/HookComponent1';
 import HookComponent2 from './hook/HookComponent2';
+import CustomHook from './hook/CustomHook';
 
 // 중괄호가 없어서 default로 잡힘 인포트 명 변경 가능
 
@@ -95,8 +96,9 @@ function App() {
   <StateComponent />
   <ForwordingStateComponent />
   <HookComponent1 />
-  <Sample />*/}
   <HookComponent2 />
+  <Sample />*/}
+  <CustomHook />
     </>
   );
 }
